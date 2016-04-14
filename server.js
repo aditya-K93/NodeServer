@@ -75,13 +75,12 @@ var requestdata={"to":id,
 					"data":config};
 
 url="https://gcm-http.googleapis.com/gcm/send";
-auth="AIzaSyDgkfSrTH2N4YSM5EeSx6Ba8qVLg-oc6As";
 request({
     url: url,
     method: "POST",
     json: true,
     headers: {
-    	"Authorization":"key="+"AIzaSyAbsogR7te9MwORiz4sY6qGiuFY2rt4gsY",
+    	"Authorization":"key="+"SERVER KEY",
         "Content-Type": "application/json",
     },
     body: JSON.stringify(requestdata) }, function(err,res,body)		{
