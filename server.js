@@ -38,13 +38,12 @@ function handleRequest(request, response){
    
 
 
-    response.end("Hello World\n");
+    //response.end("Hello World\n");
 }
 
 else 
 	{	
-        response.writeHead(200, {"Content-Type": "text/plain"});
-        response.write("FIST"); 
+        
 		var fs = require('fs');
 		fs.readFile('Registration_Id.txt', function(err, data) {
    		if(err) throw err;
@@ -70,7 +69,7 @@ else
 
 function pushnotif(id){
 var request =require("request");
-var config = require('/home/aditya/message.json');
+var config = require('/home/ec2-user/NodeServer/message.json');
 console.log(config.Message);
 var requestdata={"to":id,
 					"data":config};
