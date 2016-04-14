@@ -3,7 +3,7 @@ var http = require('http');
 //Lets define a port we want to listen to
 const PORT=8000; 
 
-//We need a function which handles requests and send response
+//We need a function which handles requests and send response.this is a single server to handle both client registration and sending push notifs.
 function handleRequest(request, response){
 	
 	var jsonString = ''; 
