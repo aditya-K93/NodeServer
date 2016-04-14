@@ -43,6 +43,8 @@ function handleRequest(request, response){
 
 else 
 	{	
+        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.write("FIST"); 
 		var fs = require('fs');
 		fs.readFile('Registration_Id.txt', function(err, data) {
    		if(err) throw err;
